@@ -16,6 +16,23 @@
 		stroke:darkmagenta;
 		stroke-width:5;
 	}
+	
+/*	svg rect{
+		fill:blue;
+		opacity: 0.5;
+	}*/
+	svg .blueGroup{
+		fill: blue;
+		stroke-width:3;
+	}
+	svg .redGroup{
+		fill: red;
+		stroke-width:3;
+	}
+	svg .greenGroup{
+		fill: green;
+		stroke-width:3;
+	}
 	</style>
 	<body>
 		<p>
@@ -36,7 +53,7 @@
 			<circle cx="238" cy="252" r="50" class="styled_circle"/>
 			<circle cx="175" cy="200" r="25" class="styled_circle"/>
 			<circle cx="215" cy="190" r="10" class="styled_circle"/>
-			<rect x="0" y="200" width="60" height="30" rx="5" ry="5"/>
+			<rect x="0" =y"200" width="60" height="30" rx="5" ry="5"/>
 			<polygon points="400,200 350,250 450,250 400,300"/>
 		</svg>
 
@@ -49,5 +66,25 @@
 			<text x="0" y="90" font-size="15">Square</text>
 			<line x1="60" y1="85" x2="160" y2="85" class="linecap_demo" stroke-linecap="square"/>
 		</svg>
+
+		<svg width="500"px height = "500px">
+			<g class="blueGroup" transform="translate(100)rotate(45)">
+				<rect x="0" y ="40" width="50" height="50" rx="10" ry="10"/>
+				<polygon points="80,30 70,70 130,50"/>
+				<line x1="60" y1="75" x2="130" y2="90" stroke="blue" />
+			</g>
+			<g class="redGroup" transform="translate(200,250) rotate(0)">
+				<rect x="0" y ="40" width="50" height="50" rx="10" ry="10"/>
+				<polygon points="80,30 70,70 130,50"/>
+				<line x1="60" y1="75" x2="130" y2="90" stroke="red" />
+			</g>
+			<g class="greenGroup" transform="translate(120,280) rotate(270)">
+				<rect x="0" y ="40" width="50" height="50" rx="10" ry="10"/>
+				<polygon points="80,30 70,70 130,50"/>
+				<line x1="60" y1="75" x2="130" y2="90" stroke="green" />
+			</g>
+		</svg>
+
+
 	</body>
 </html>
